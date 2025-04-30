@@ -1,0 +1,8 @@
+FROM frrouting/frr:v8.4.0
+
+RUN apk add --no-cache busybox
+
+COPY daemons /etc/frr/daemons
+
+
+
